@@ -1,0 +1,23 @@
+@import "../../../toolbox/styles/_theme.scss";
+
+.Name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(18px, 2vw, 20px);
+    line-height: 29px;
+    margin: 0 25px 0 15px;
+    color: $color-white;
+    @media screen and (min-width: $breakpoint-sm) {
+        color: $color-primary;
+    }
+}
+
+.Icon {
+    @media screen and (min-width: $breakpoint-sm) {
+        g {
+            path {
+                fill: $color-primary;
+            }
+        }
+    }
+}

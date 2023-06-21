@@ -1,0 +1,33 @@
+@import "../../toolbox/styles/theme";
+.CustomTable {
+    overflow-x: auto;
+    width: 100%;
+    &Cell {
+        color: $color-primary;
+        font-family: $font-primary;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+.ActionIcon {
+    width: 32px;
+    height: 32px;
+}
+.RootItem {
+    color: $color-primary;
+    font-size: 16px;
+}
+.Selected {
+    background: rgba(0, 126, 167, 0.38);
+}
+.Pagination {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+    &Item {
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
+        list-style: none;
+    }
+}

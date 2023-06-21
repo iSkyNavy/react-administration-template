@@ -1,0 +1,25 @@
+@import "../../toolbox/styles/theme";
+.Toolbar {
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+.Title {
+    font-size: clamp(14px, 5vw, 24px);
+    font-weight: 600;
+    line-height: clamp(24px, 3vw, 36px);
+    letter-spacing: 0.035em;
+    cursor: pointer;
+}
+.MenuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    max-width: none;
+}
+
+.UserMenu {
+    border-radius: 5px;
+}

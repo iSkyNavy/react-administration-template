@@ -1,0 +1,17 @@
+@import "../../toolbox/styles/theme";
+.MenuList {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.Modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.IconGray {
+    fill: $color-red;
+}
+.MenuCustomButton {
+    padding: 0px;
+    width: 125px;
+    height: 40px;
+}

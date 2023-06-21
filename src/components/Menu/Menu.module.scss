@@ -1,0 +1,39 @@
+@import "../../toolbox/styles/theme";
+
+.MenuPaper {
+    background: $color-primary;
+    width: 75%;
+    top: unset;
+}
+.ListContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #9bb6c1;
+
+    flex-direction: column;
+    color: $color-white;
+}
+.ListContainerItem {
+    @extend .ListContainer;
+    min-height: 80px;
+}
+.UserMenu {
+    border-radius: 16px;
+    &:hover {
+        background-color: transparent;
+    }
+}
+.ExitIcon {
+    width: 24px;
+    height: 24px;
+    fill: $color-white;
+    margin-right: 8px;
+}
+.ListContainerItemOptions {
+    @extend .ListContainer;
+    min-height: 100px;
+    button {
+        margin: 5px 0;
+    }
+}

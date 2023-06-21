@@ -1,0 +1,15 @@
+@import "../../toolbox/styles/theme";
+.HeaderBase {
+    background-color: $color-white;
+    color: $color-primary;
+    box-shadow: 0px 4px 9px rgba(10, 51, 105, 0.25);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-family: $font-primary;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: $zIndex-Header;
+}

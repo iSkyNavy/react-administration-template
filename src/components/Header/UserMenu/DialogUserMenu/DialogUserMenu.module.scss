@@ -1,0 +1,52 @@
+@import "../../../../toolbox/styles/_theme.scss";
+
+%MenuPaper {
+    width: clamp(197px, 4vw, 210px);
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #9bb6c1;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    right: 16px;
+}
+.MenuPanelPaper {
+    @extend %MenuPaper;
+    top: 76px;
+}
+.MenuIntranetPaper {
+    @extend %MenuPaper;
+    top: 56px;
+    @media (min-width: 600px) {
+        top: 66px;
+    }
+}
+.MenuList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.MenuButton {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-primary;
+    text-transform: none;
+    padding: 0;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.Item {
+    margin-left: 8px;
+}
+.Icon {
+    width: 24px;
+    height: 24px;
+    fill: $color-primary;
+}

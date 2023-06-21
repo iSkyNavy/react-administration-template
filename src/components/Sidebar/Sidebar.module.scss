@@ -1,0 +1,13 @@
+@import "../../toolbox/styles/theme";
+
+.MenuIcon {
+    background-color: $color-white;
+    color: $color-primary;
+    position: absolute;
+    right: 2px;
+    width: 37px;
+    height: 37px;
+    &:hover {
+        background-color: $color-cover;
+    }
+}

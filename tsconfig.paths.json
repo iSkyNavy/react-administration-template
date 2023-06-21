@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@assets/*": ["src/assets/*"],
+			"@models/*": ["src/api/models/*"],
+			"@ports/*": ["src/api/ports/*"],
+			"@repositories/*": ["src/api/repositories/*"],
+			"@services/*": ["src/api/services/*"],
+			"@api/*": ["src/api/*"],
+			"@components/*": ["src/components/*"],
+			"@layout/*": ["src/components/layouts/*"],
+			"@context/*": ["src/context/*"],
+			"@routes/*": ["src/routes/*"],
+			"@redux/*": ["src/redux/*"],
+			"@views/*": ["src/views/*"],
+			"@contexts/*": ["src/contexts/*"],
+			"@constants/*": ["src/toolbox/constants/*"],
+			"@storage/*": ["src/toolbox/storage/*"],
+			"@defaults/*": ["src/toolbox/defaults/*"],
+			"@enums/*": ["src/toolbox/enums/*"],
+			"@helpers/*": ["src/toolbox/helpers/*"],
+			"@hooks/*": ["src/toolbox/hooks/*"],
+			"@styles/*": ["src/toolbox/styles/*"],
+			"@interfaces/*": ["src/toolbox/interfaces/*"],
+			"@toolbox/*": ["src/toolbox/*"],
+			"@theme/*": ["src/theme/*"]
+		}
+	}
+}

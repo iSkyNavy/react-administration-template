@@ -1,0 +1,90 @@
+@import "../../toolbox/styles/theme";
+$border-radius: 15px;
+.Cover {
+    background-color: #efefef;
+    height: 100%;
+    display: flex;
+    padding: 15px;
+    &Main {
+        background-color: $color-white;
+        width: 90%;
+        max-width: 450px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: $border-radius;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        &Content {
+            height: 100%;
+            width: 100%;
+            padding: clamp(10px, 0.5vw, 20px) 20px;
+        }
+        &Form {
+            background-color: $color-primary;
+            color: $color-white;
+            border-radius: 0 0 $border-radius $border-radius;
+        }
+    }
+}
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    &Icon {
+        width: clamp(140px, 30vw, 300px);
+        @media screen and (min-width: $breakpoint-sm) {
+            height: 70%;
+            width: 100%;
+        }
+        g {
+            fill: $color-primary;
+        }
+        path {
+            fill: $color-primary;
+        }
+    }
+}
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &Input {
+        max-width: 300px;
+        width: 100%;
+    }
+    &Button {
+        width: 100%;
+        max-width: 300px;
+        min-height: 40px;
+        margin: 20px 0;
+    }
+}
+@media screen and (min-width: $breakpoint-sm) {
+    .Cover {
+        height: 100vh;
+        &Main {
+            background-color: $color-white;
+            flex-direction: row;
+            height: clamp(435px, 69vw, 530px);
+
+            border-radius: 50px;
+            width: 85%;
+            max-width: 1500px;
+
+            &Content {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            &Form {
+                border-radius: 50px;
+            }
+        }
+    }
+    .Content {
+        height: 50%;
+    }
+}
